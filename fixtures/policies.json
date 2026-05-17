@@ -1,0 +1,37 @@
+{
+  "project": "Alpha Memo Forensics Engine",
+  "criteria": [
+    {
+      "criterion_id": "crit_01",
+      "text": "Synthetic memo, catalyst, source, and market-signal records.",
+      "requires_evidence": true
+    },
+    {
+      "criterion_id": "crit_02",
+      "text": "Claim forensics for unsupported assertions, stale evidence, and contradiction risk.",
+      "requires_evidence": true
+    },
+    {
+      "criterion_id": "crit_03",
+      "text": "Verifiable reports, CSV findings, and an offline analytics dashboard.",
+      "requires_evidence": true
+    },
+    {
+      "criterion_id": "crit_04",
+      "text": "Offline dashboard generated as a static HTML artifact.",
+      "requires_evidence": true
+    },
+    {
+      "criterion_id": "crit_05",
+      "text": "Evidence verifier rejects unsupported or unknown claims.",
+      "requires_evidence": true
+    }
+  ],
+  "negative_controls": [
+    {
+      "control_id": "unsupported_claim",
+      "text": "CLAIM: this impressive claim has no evidence marker",
+      "should_fail_verification": true
+    }
+  ]
+}

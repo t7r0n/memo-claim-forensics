@@ -1,0 +1,25 @@
+{
+  "slug": "hudson-labs-alpha-memo-forensics",
+  "company": "Alpha Memo Forensics Engine",
+  "title": "Alpha Memo Forensics Engine",
+  "thesis": "A local research-quality prototype for checking synthetic investment memo claims against evidence, freshness, contradiction, and traceability signals.",
+  "dataset": [
+    "Synthetic local fixtures generated deterministically from a seed.",
+    "Typed records stored in a local DuckDB database.",
+    "Evidence identifiers preserved from ingestion through report generation.",
+    "No external services, credentials, or production data are required."
+  ],
+  "build": [
+    "Synthetic memo, catalyst, source, and market-signal records.",
+    "Claim forensics for unsupported assertions, stale evidence, and contradiction risk.",
+    "Verifiable reports, CSV findings, and an offline analytics dashboard.",
+    "Offline dashboard generated as a static HTML artifact.",
+    "Evidence verifier rejects unsupported or unknown claims."
+  ],
+  "tests": [
+    "Unit tests cover the end-to-end local workflow.",
+    "Verifier tests cover unsupported and unknown evidence references.",
+    "Dashboard escaping tests cover fixture text rendered into HTML.",
+    "Benchmark: record count, runtime, artifact count, and verification status are recorded."
+  ]
+}
