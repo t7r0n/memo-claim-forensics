@@ -2,13 +2,19 @@
 
 A local research-quality prototype for checking synthetic investment memo claims against evidence, freshness, contradiction, and traceability signals.
 
-## Features
+`hudson-labs-alpha-memo-forensics` favors explicit fixtures, deterministic checks, and reviewable artifacts over hidden services or live data.
+
+## Decision surface
+
+Alpha Memo Forensics Engine: Citation-Grade Investment Research With Contradiction Tracking.
+
+## Evaluator shape
 
 - Synthetic memo, catalyst, source, and market-signal records.
 - Claim forensics for unsupported assertions, stale evidence, and contradiction risk.
 - Verifiable reports, CSV findings, and an offline analytics dashboard.
 
-## Run Locally
+## Quick path
 
 ```bash
 uv sync
@@ -23,7 +29,7 @@ uv run pytest -q
 uv run ruff check .
 ```
 
-## Outputs
+## Materialized results
 
 - `outputs/dashboard.html`
 - `outputs/decision_report.md`
@@ -32,6 +38,14 @@ uv run ruff check .
 - `outputs/benchmark.md`
 - `outputs/demo_pack.md`
 
-## Data Policy
+## Acceptance checks
 
-This project runs fully locally on deterministic synthetic fixtures. It does not require external APIs, credentials, private datasets, network access, or production systems.
+```bash
+uv run ruff check .
+uv run pytest -q
+uv run app verify
+```
+
+## Repo boundary
+
+Every example in `hudson-labs-alpha-memo-forensics` is fabricated for repeatability. Generated outputs are rebuildable artifacts, not source material.
