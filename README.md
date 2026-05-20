@@ -3,7 +3,7 @@
 ![Alpha Memo Forensics Engine working preview](outputs/project_working.svg)
 A local research-quality prototype for checking synthetic investment memo claims against evidence, freshness, contradiction, and traceability signals.
 
-`memo-claim-forensics` favors explicit fixtures, deterministic checks, and reviewable artifacts over hidden services or live data.
+`alpha-memo-forensics` favors explicit fixtures, deterministic checks, and reviewable artifacts over hidden services or live data.
 
 ## Decision surface
 
@@ -52,4 +52,4 @@ uv run app verify
 
 ## Repo boundary
 
-Every example in `memo-claim-forensics` is fabricated for repeatability. Generated outputs are rebuildable artifacts, not source material.
+Every example in `alpha-memo-forensics` is fabricated for repeatability. Generated outputs are rebuildable artifacts, not source material.
