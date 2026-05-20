@@ -1,5 +1,5 @@
 [project]
-name = "hudson-labs-alpha-memo-forensics"
+name = "memo-claim-forensics"
 version = "0.1.0"
 description = "Alpha Memo Forensics Engine: Citation-Grade Investment Research With Contradiction Tracking"
 requires-python = ">=3.12"

@@ -19,7 +19,7 @@ PRIMARY_METRIC = 'support_score'
 PRIMARY_LABEL = 'Support'
 CHECKS = ['guidance metric contradiction caught', 'false bullish memo rejected', 'numeric claims match source tables', 'unsupported recommendation fails']
 CASES = [['issuer-a', 'supported', 'accept', True, 93, '10Q:T12 call:C4 table:SEG-1', 'claim matches margin and segment table'], ['issuer-b', 'contradiction', 'reject', True, 33, 'call:C8 10Q:T31', 'management guide conflicts with reported deceleration'], ['issuer-c', 'risk_spike', 'escalate', True, 79, 'filing:F22 lawsuit:L3', 'new lawsuit language increases risk'], ['issuer-d', 'misclassification', 'reject', True, 42, 'table:SEG-9 memo:M2', 'memo maps revenue to wrong segment'], ['issuer-e', 'unsupported', 'reject', False, 25, 'memo:M9', 'recommendation lacks cited source span']]
-SLUG = 'hudson-labs-alpha-memo-forensics'
+SLUG = 'memo-claim-forensics'
 
 
 class DomainCase(BaseModel):
