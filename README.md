@@ -1,5 +1,6 @@
 # Alpha Memo Forensics Engine
 
+![Alpha Memo Forensics Engine working preview](outputs/project_working.svg)
 A local research-quality prototype for checking synthetic investment memo claims against evidence, freshness, contradiction, and traceability signals.
 
 `hudson-labs-alpha-memo-forensics` favors explicit fixtures, deterministic checks, and reviewable artifacts over hidden services or live data.
@@ -28,6 +29,9 @@ uv run app export-demo-pack
 uv run pytest -q
 uv run ruff check .
 ```
+
+
+![Alpha Memo Forensics Engine evidence map](outputs/evidence_map.svg)
 
 ## Materialized results
 
